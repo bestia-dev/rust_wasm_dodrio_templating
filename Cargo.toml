@@ -1,0 +1,66 @@
+[package]
+name = "rust_wasm_dodrio_templating"
+version = "1.0.2"
+authors = ["Luciano Bestia <Luciano.Bestia@gmail.com>"]
+edition = "2018"
+description = "html templating for dodrio"
+repository = "https://github.com/LucianoBestia/rust_wasm_dodrio_templating"
+readme = "README.md"
+license = "MIT"
+keywords = ["wasm","dodrio","virtual dom"]
+categories = ["game","learning"]
+publish = true
+
+[dependencies]
+# my libraries from crates.io
+reader_for_microxml = "2.0.1"
+rust_wasm_websys_utils = "0.4.3"
+
+# third party libraries
+wasm-bindgen = { version = "0.2.69", features = ["serde-serialize"] }
+js-sys = "0.3"
+unwrap = "1.2.1"
+dodrio = "0.2.0"
+serde ="1.0.119"
+serde_json = "1.0"
+wasm-bindgen-futures = "0.4.19"
+
+# local libraries for debugging only
+# reader_for_microxml = {path = "../reader_for_microxml"}
+# dodrio =  { git = "https://github.com/fitzgen/dodrio", branch = "master" }
+# dodrio = {path = "../rust_wasm_dodrio_copy"}
+
+[dependencies.web-sys]
+version = "0.3.46"
+features = [
+  "console",
+  "Document",
+  "Element",
+  "ErrorEvent",
+  "Event",
+  "EventListener",
+  "EventTarget",
+  "History",
+  "HtmlAudioElement",
+  "HtmlElement",
+  "HtmlImageElement",
+  "HtmlInputElement",
+  "HtmlMediaElement",
+  "KeyboardEvent",
+  "Location",
+  "MouseEvent",
+  "Navigator",
+  "Node",
+  "Request",
+  "RequestCache",
+  "RequestCredentials",
+  "RequestInit",
+  "RequestMode",
+  "RequestRedirect",
+  "Response",
+  "Storage",
+  "Window",
+]
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.19"

@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["html_template_mod","html_template_mod Html templating for dodrio, generic code for a standalone library. The implementation is in another file where RootRenderingComponents implement the trait HtmlTemplating"]]});
