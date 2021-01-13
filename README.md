@@ -36,6 +36,10 @@ I can replace attributes, strings and entire nodes. And I can insert event for b
 When developing, the html template is loaded and parsed and a dodrio node is created. That is not very fast. But I can change the html in real time and see it rendered without compiling the Rust code. This is super efficient for development.  
 I have in plans to add a Rust code generator, that creates the Rust code for the dodrio node before compile time. In that case nothing is parsed in runtime and I expect great speeds. But the flexibility of easily changing the html template is gone. For every change I must recompile the Rust code.  
 
+## Used in projects
+ 
+<https://github.com/LucianoBestia/unforgettable7_game/blob/master/unforgettable7>  
+
 ## cargo crev reviews and advisory
 
 It is recommended to always use [cargo-crev](https://github.com/crev-dev/cargo-crev)  

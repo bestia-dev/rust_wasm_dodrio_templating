@@ -7,8 +7,8 @@ description = "html templating for dodrio"
 repository = "https://github.com/LucianoBestia/rust_wasm_dodrio_templating"
 readme = "README.md"
 license = "MIT"
-keywords = ["wasm","dodrio","virtual dom"]
-categories = ["game","learning"]
+keywords = ["wasm","dodrio","virtual_dom"]
+categories = ["wasm","template-engine"]
 publish = true
 
 [dependencies]
