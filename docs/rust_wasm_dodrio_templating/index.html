@@ -1,14 +1,15 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `rust_wasm_dodrio_templating` crate."><meta name="keywords" content="rust, rustlang, rust-lang, rust_wasm_dodrio_templating"><title>rust_wasm_dodrio_templating - Rust</title><link rel="stylesheet" type="text/css" href="../normalize.css"><link rel="stylesheet" type="text/css" href="../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../light.css"  id="themeStyle"><link rel="stylesheet" type="text/css" href="../dark.css" disabled ><link rel="stylesheet" type="text/css" href="../ayu.css" disabled ><script src="../storage.js"></script><noscript><link rel="stylesheet" href="../noscript.css"></noscript><link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="alternate icon" type="image/png" href="../favicon-16x16.png">
 <link rel="alternate icon" type="image/png" href="../favicon-32x32.png"><style type="text/css">#crate-search{background-image:url("../down-arrow.svg");}</style></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../rust_wasm_dodrio_templating/index.html'><div class='logo-container rust-logo'><img src='../rust-logo.png' alt='logo'></div></a><p class='location'>Crate rust_wasm_dodrio_templating</p><div class='block version'><p>Version 1.0.2</p></div><div class="sidebar-elems"><a id='all-types' href='all.html'><p>See all rust_wasm_dodrio_templating's items</p></a><div class="block items"><ul><li><a href="#modules">Modules</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'rust_wasm_dodrio_templating', ty: 'mod', relpath: '../'};</script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../theme.js"></script><nav class="sub"><form class="search-form"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" disabled autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><span class="help-button">?</span>
-                <a id="settings-menu" href="../settings.html"><img src="../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../src/rust_wasm_dodrio_templating/lib.rs.html#2-42' title='goto source code'>[src]</a></span><span class='in-band'>Crate <a class="mod" href=''>rust_wasm_dodrio_templating</a></span></h1><div class='docblock'><h1 id="rust_wasm_dodrio_templating" class="section-header"><a href="#rust_wasm_dodrio_templating">rust_wasm_dodrio_templating</a></h1>
+                <a id="settings-menu" href="../settings.html"><img src="../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../src/rust_wasm_dodrio_templating/lib.rs.html#2-122' title='goto source code'>[src]</a></span><span class='in-band'>Crate <a class="mod" href=''>rust_wasm_dodrio_templating</a></span></h1><div class='docblock'><h1 id="rust_wasm_dodrio_templating" class="section-header"><a href="#rust_wasm_dodrio_templating">rust_wasm_dodrio_templating</a></h1>
 <p><strong>html templating for dodrio</strong><br />
 <em><strong><a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating">repo</a>; version: 1.0.2  date: 2021-01-13 authors: Luciano Bestia</strong></em></p>
-<p><a href=""><img src="https://img.shields.io/badge/Lines_in_Rust-262-green.svg" alt="Lines in Rust code" /></a>
-<a href=""><img src="https://img.shields.io/badge/Lines_in_Doc_comments-22-blue.svg" alt="Lines in Doc comments" /></a>
-<a href=""><img src="https://img.shields.io/badge/Lines_in_comments-51-purple.svg" alt="Lines in Comments" /></a>
-<a href=""><img src="https://img.shields.io/badge/Lines_in_examples-0-yellow.svg" alt="Lines in examples" /></a>
-<a href=""><img src="https://img.shields.io/badge/Lines_in_tests-0-orange.svg" alt="Lines in tests" /></a></p>
+<p><a href="https://crates.io/crates/rust_wasm_dodrio_templating"><img src="https://meritbadge.herokuapp.com/rust_wasm_dodrio_templating" alt="crates.io" /></a> <a href="https://docs.rs/rust_wasm_dodrio_templating/"><img src="https://docs.rs/rust_wasm_dodrio_templating/badge.svg" alt="Documentation" /></a> <a href="https://web.crev.dev/rust-reviews/crate/rust_wasm_dodrio_templating/"><img src="https://web.crev.dev/rust-reviews/badge/crev_count/rust_wasm_dodrio_templating.svg" alt="crev reviews" /></a> <a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/"><img src="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/workflows/rust/badge.svg" alt="RustActions" /></a> <a href="https://lucianobestia.github.io/rust_wasm_dodrio_templating/rust_wasm_dodrio_templating/index.html"><img src="https://img.shields.io/badge/latest_docs-GitHub-orange.svg" alt="latest doc" /></a> <a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Licence" /></a></p>
+<p><a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/"><img src="https://img.shields.io/badge/Lines_in_Rust-261-green.svg" alt="Lines in Rust code" /></a>
+<a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/"><img src="https://img.shields.io/badge/Lines_in_Doc_comments-141-blue.svg" alt="Lines in Doc comments" /></a>
+<a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/"><img src="https://img.shields.io/badge/Lines_in_comments-51-purple.svg" alt="Lines in Comments" /></a>
+<a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/"><img src="https://img.shields.io/badge/Lines_in_examples-0-yellow.svg" alt="Lines in examples" /></a>
+<a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/"><img src="https://img.shields.io/badge/Lines_in_tests-0-orange.svg" alt="Lines in tests" /></a></p>
 <h2 id="html-templating" class="section-header"><a href="#html-templating">Html templating</a></h2>
 <p>In the past I wrote html inside Rust code with the macro <code>html!</code> from the <code>crate typed-html</code><br />
 <a href="https://github.com/bodil/typed-html">https://github.com/bodil/typed-html</a><br />
@@ -26,6 +27,63 @@ In my code I parse the html template as a microXml file. Basically they are the 
 I can replace attributes, strings and entire nodes. And I can insert event for behavior with &quot;data-wt&quot;.<br />
 When developing, the html template is loaded and parsed and a dodrio node is created. That is not very fast. But I can change the html in real time and see it rendered without compiling the Rust code. This is super efficient for development.<br />
 I have in plans to add a Rust code generator, that creates the Rust code for the dodrio node before compile time. In that case nothing is parsed in runtime and I expect great speeds. But the flexibility of easily changing the html template is gone. For every change I must recompile the Rust code.</p>
+<h2 id="used-in-projects" class="section-header"><a href="#used-in-projects">Used in projects</a></h2>
+<p><a href="https://github.com/LucianoBestia/unforgettable7_game/">https://github.com/LucianoBestia/unforgettable7_game/</a></p>
+<h2 id="how-to-use-it" class="section-header"><a href="#how-to-use-it">How to use it</a></h2>
+<p>Inside a perfectly working static html insert special comments and attributes to replace the next node or attribute.</p>
+<h3 id="replace-the-next-text-node" class="section-header"><a href="#replace-the-next-text-node">Replace the next text node</a></h3>
+<p>Insert a comment that starts with &quot;wt_&quot; (webbrowser text).<br />
+After that is the name of the enum to replace in the fn replace_with_string().</p>
+<pre><code class="language-html">&lt;p&gt;&lt;!--wt_new_text&gt;old_text&lt;/p&gt;
+</code></pre>
+<h3 id="replace-the-next-node-with-nodes" class="section-header"><a href="#replace-the-next-node-with-nodes">Replace the next node with nodes</a></h3>
+<p>Insert a comment that starts with &quot;wn_&quot; (webbrowser nodes).<br />
+After that is the name of the enum to replace in the fn replace_with_nodes().<br />
+The computed nodes can be complicated with a lot of html. If needed, this fragments of html are saved inside the html template as sub_templates. </p>
+<pre><code class="language-html">&lt;p&gt;&lt;!--wn_new_nodes&gt;&lt;div id=&quot;old_node&quot;&gt;...&lt;/div&gt;&lt;/p&gt;
+</code></pre>
+<h3 id="replace-the-next-attribute-text-value" class="section-header"><a href="#replace-the-next-attribute-text-value">Replace the next attribute text value</a></h3>
+<p>Insert an attribute that starts with &quot;data-wt-&quot; (webbrowser text).<br />
+The attribute name finishes in the name of the next attribute.<br />
+The attribute value is the enum to use in the fn replace_with_string().</p>
+<pre><code class="language-html">&lt;input data-wt-value=&quot;wt_new_text&quot; value=&quot;old text&quot; /&gt;
+</code></pre>
+<h3 id="set-the-event-handler" class="section-header"><a href="#set-the-event-handler">Set the event handler</a></h3>
+<p>Insert an attribute that starts with &quot;data-on-&quot;.<br />
+The attribute name finishes in the name of the event to handle.<br />
+The attribute value is the enum to use in the fn set_event_listener().<br />
+The enum name must start with &quot;wl_&quot; (Webbrowser listener).</p>
+<pre><code class="language-html">&lt;input data-on-keyup=&quot;wl_nickname_on_keyup&quot; /&gt;
+</code></pre>
+<h3 id="sub_templates" class="section-header"><a href="#sub_templates">Sub_templates</a></h3>
+<p>When a part of the html template needs to be repeated, we use sub_templates.
+A sub_template is inside the html template in the node <code>&lt;template&gt;</code>.</p>
+<pre><code class="language-html">&lt;template name=&quot;sub_template_name&quot;&gt;
+        &lt;div&gt;some html&lt;/div&gt;
+&lt;/template&gt;
+</code></pre>
+<p>The sub_template has a name attribute that is used for replacement in Rust code to return a vector of nodes for replace the &quot;wn_&quot; special comment.</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered">
+<span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">div_grid_all_items</span><span class="op">&lt;</span><span class="lifetime">&#39;a</span><span class="op">&gt;</span>(
+    <span class="ident">rrc</span>: <span class="kw-2">&amp;</span><span class="ident">RootRenderingComponent</span>,
+    <span class="ident">cx</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">RenderContext</span><span class="op">&lt;</span><span class="lifetime">&#39;a</span><span class="op">&gt;</span>,
+) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">Node</span><span class="op">&lt;</span><span class="lifetime">&#39;a</span><span class="op">&gt;</span><span class="op">&gt;</span> {
+    <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">vec_grid_items</span>: <span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">Node</span><span class="op">&lt;</span><span class="lifetime">&#39;a</span><span class="op">&gt;</span><span class="op">&gt;</span> <span class="op">=</span> <span class="ident">Vec</span>::<span class="ident">new</span>();
+    <span class="kw">for</span> <span class="ident">x</span> <span class="kw">in</span> <span class="number">1</span>..<span class="op">=</span><span class="number">10</span> {
+        <span class="kw">let</span> <span class="ident">html_template</span> <span class="op">=</span> <span class="ident">rrc</span>.<span class="ident">web_data</span>.<span class="ident">get_sub_template</span>(<span class="string">&quot;sub_template_name&quot;</span>);
+
+        <span class="kw">let</span> <span class="ident">grid_item</span> <span class="op">=</span> <span class="macro">unwrap</span><span class="macro">!</span>(<span class="ident">rrc</span>.<span class="ident">render_template</span>(
+            <span class="ident">cx</span>,
+            <span class="kw-2">&amp;</span><span class="ident">html_template</span>,
+            <span class="ident">rust_wasm_dodrio_templating</span>::<span class="ident">html_template_mod</span>::<span class="ident">HtmlOrSvg</span>::<span class="ident">Html</span>
+        ))
+        <span class="ident">vec_grid_items</span>.<span class="ident">push</span>(<span class="ident">grid_item_bump</span>);
+    }
+
+    <span class="comment">// return</span>
+    <span class="ident">vec_grid_items</span>
+}</pre></div>
 <h2 id="cargo-crev-reviews-and-advisory" class="section-header"><a href="#cargo-crev-reviews-and-advisory">cargo crev reviews and advisory</a></h2>
 <p>It is recommended to always use <a href="https://github.com/crev-dev/cargo-crev">cargo-crev</a><br />
 to verify the trustworthiness of each of your dependencies.<br />
