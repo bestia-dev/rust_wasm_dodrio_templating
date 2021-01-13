@@ -1,6 +1,6 @@
 [package]
 name = "rust_wasm_dodrio_templating"
-version = "1.0.2"
+version = "1.0.3"
 authors = ["Luciano Bestia <Luciano.Bestia@gmail.com>"]
 edition = "2018"
 description = "html templating for dodrio"
@@ -14,7 +14,7 @@ publish = true
 [dependencies]
 # my libraries from crates.io
 reader_for_microxml = "2.0.1"
-rust_wasm_websys_utils = "0.4.3"
+# unused rust_wasm_websys_utils = "0.4.3"
 
 # third party libraries
 wasm-bindgen = { version = "0.2.69", features = ["serde-serialize"] }

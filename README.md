@@ -5,7 +5,7 @@
 [comment]: # (lmake_cargo_toml_to_md start)
 
 **html templating for dodrio**  
-***[repo](https://github.com/LucianoBestia/rust_wasm_dodrio_templating); version: 1.0.2  date: 2021-01-13 authors: Luciano Bestia***  
+***[repo](https://github.com/LucianoBestia/rust_wasm_dodrio_templating); version: 1.0.3  date: 2021-01-13 authors: Luciano Bestia***  
 
 [comment]: # (lmake_cargo_toml_to_md end)
 
@@ -13,7 +13,7 @@
 
 [comment]: # (lmake_lines_of_code start)
 [![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-261-green.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
-[![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-140-blue.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
+[![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-145-blue.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
 [![Lines in Comments](https://img.shields.io/badge/Lines_in_comments-51-purple.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
 [![Lines in examples](https://img.shields.io/badge/Lines_in_examples-0-yellow.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
 [![Lines in tests](https://img.shields.io/badge/Lines_in_tests-0-orange.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
