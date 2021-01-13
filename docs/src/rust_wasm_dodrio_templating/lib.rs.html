@@ -123,6 +123,11 @@
 <span id="120">120</span>
 <span id="121">121</span>
 <span id="122">122</span>
+<span id="123">123</span>
+<span id="124">124</span>
+<span id="125">125</span>
+<span id="126">126</span>
+<span id="127">127</span>
 </pre><div class="example-wrap"><pre class="rust ">
 <span class="comment">// region: lmake_md_to_doc_comments include README.md A //!</span>
 <span class="doccomment">//! # rust_wasm_dodrio_templating</span>
@@ -158,7 +163,7 @@
 <span class="doccomment">//! I have in plans to add a Rust code generator, that creates the Rust code for the dodrio node before compile time. In that case nothing is parsed in runtime and I expect great speeds. But the flexibility of easily changing the html template is gone. For every change I must recompile the Rust code.  </span>
 <span class="doccomment">//!</span>
 <span class="doccomment">//! ## Used in projects</span>
-<span class="doccomment">//!  </span>
+<span class="doccomment">//!</span>
 <span class="doccomment">//! &lt;https://github.com/LucianoBestia/unforgettable7_game/&gt;  </span>
 <span class="doccomment">//!</span>
 <span class="doccomment">//! ## How to use it</span>
@@ -169,6 +174,7 @@
 <span class="doccomment">//!</span>
 <span class="doccomment">//! Insert a comment that starts with &quot;wt_&quot; (webbrowser text).  </span>
 <span class="doccomment">//! After that is the name of the enum to replace in the fn replace_with_string().  </span>
+<span class="doccomment">//!</span>
 <span class="doccomment">//! ```html</span>
 <span class="doccomment">//! &lt;p&gt;&lt;!--wt_new_text&gt;old_text&lt;/p&gt;</span>
 <span class="doccomment">//! ```</span>
@@ -177,7 +183,8 @@
 <span class="doccomment">//!</span>
 <span class="doccomment">//! Insert a comment that starts with &quot;wn_&quot; (webbrowser nodes).  </span>
 <span class="doccomment">//! After that is the name of the enum to replace in the fn replace_with_nodes().  </span>
-<span class="doccomment">//! The computed nodes can be complicated with a lot of html. If needed, this fragments of html are saved inside the html template as sub_templates. </span>
+<span class="doccomment">//! The computed nodes can be complicated with a lot of html. If needed, this fragments of html are saved inside the html template as sub_templates.  </span>
+<span class="doccomment">//!</span>
 <span class="doccomment">//! ```html</span>
 <span class="doccomment">//! &lt;p&gt;&lt;!--wn_new_nodes&gt;&lt;div id=&quot;old_node&quot;&gt;...&lt;/div&gt;&lt;/p&gt;</span>
 <span class="doccomment">//! ```</span>
@@ -187,6 +194,7 @@
 <span class="doccomment">//! Insert an attribute that starts with &quot;data-wt-&quot; (webbrowser text).  </span>
 <span class="doccomment">//! The attribute name finishes in the name of the next attribute.  </span>
 <span class="doccomment">//! The attribute value is the enum to use in the fn replace_with_string().  </span>
+<span class="doccomment">//!</span>
 <span class="doccomment">//! ```html</span>
 <span class="doccomment">//! &lt;input data-wt-value=&quot;wt_new_text&quot; value=&quot;old text&quot; /&gt;</span>
 <span class="doccomment">//! ```</span>
@@ -197,6 +205,7 @@
 <span class="doccomment">//! The attribute name finishes in the name of the event to handle.  </span>
 <span class="doccomment">//! The attribute value is the enum to use in the fn set_event_listener().  </span>
 <span class="doccomment">//! The enum name must start with &quot;wl_&quot; (Webbrowser listener).</span>
+<span class="doccomment">//!</span>
 <span class="doccomment">//! ```html</span>
 <span class="doccomment">//! &lt;input data-on-keyup=&quot;wl_nickname_on_keyup&quot; /&gt;</span>
 <span class="doccomment">//! ```</span>
@@ -211,6 +220,7 @@
 <span class="doccomment">//!         &lt;div&gt;some html&lt;/div&gt;</span>
 <span class="doccomment">//! &lt;/template&gt;</span>
 <span class="doccomment">//! ```</span>
+<span class="doccomment">//!</span>
 <span class="doccomment">//! The sub_template has a name attribute that is used for replacement in Rust code to return a vector of nodes for replace the &quot;wn_&quot; special comment.  </span>
 <span class="doccomment">//!</span>
 <span class="doccomment">//! ```ignore</span>

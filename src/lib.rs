@@ -32,7 +32,7 @@
 //! I have in plans to add a Rust code generator, that creates the Rust code for the dodrio node before compile time. In that case nothing is parsed in runtime and I expect great speeds. But the flexibility of easily changing the html template is gone. For every change I must recompile the Rust code.  
 //!
 //! ## Used in projects
-//!  
+//!
 //! <https://github.com/LucianoBestia/unforgettable7_game/>  
 //!
 //! ## How to use it
@@ -43,6 +43,7 @@
 //!
 //! Insert a comment that starts with "wt_" (webbrowser text).  
 //! After that is the name of the enum to replace in the fn replace_with_string().  
+//!
 //! ```html
 //! <p><!--wt_new_text>old_text</p>
 //! ```
@@ -51,7 +52,8 @@
 //!
 //! Insert a comment that starts with "wn_" (webbrowser nodes).  
 //! After that is the name of the enum to replace in the fn replace_with_nodes().  
-//! The computed nodes can be complicated with a lot of html. If needed, this fragments of html are saved inside the html template as sub_templates. 
+//! The computed nodes can be complicated with a lot of html. If needed, this fragments of html are saved inside the html template as sub_templates.  
+//!
 //! ```html
 //! <p><!--wn_new_nodes><div id="old_node">...</div></p>
 //! ```
@@ -61,6 +63,7 @@
 //! Insert an attribute that starts with "data-wt-" (webbrowser text).  
 //! The attribute name finishes in the name of the next attribute.  
 //! The attribute value is the enum to use in the fn replace_with_string().  
+//!
 //! ```html
 //! <input data-wt-value="wt_new_text" value="old text" />
 //! ```
@@ -71,6 +74,7 @@
 //! The attribute name finishes in the name of the event to handle.  
 //! The attribute value is the enum to use in the fn set_event_listener().  
 //! The enum name must start with "wl_" (Webbrowser listener).
+//!
 //! ```html
 //! <input data-on-keyup="wl_nickname_on_keyup" />
 //! ```
@@ -85,6 +89,7 @@
 //!         <div>some html</div>
 //! </template>
 //! ```
+//!
 //! The sub_template has a name attribute that is used for replacement in Rust code to return a vector of nodes for replace the "wn_" special comment.  
 //!
 //! ```ignore
