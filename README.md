@@ -38,7 +38,7 @@ I have in plans to add a Rust code generator, that creates the Rust code for the
 
 ## Used in projects
  
-<https://github.com/LucianoBestia/unforgettable7_game/blob/master/unforgettable7>  
+<https://github.com/LucianoBestia/unforgettable7_game/>  
 
 ## cargo crev reviews and advisory
 
