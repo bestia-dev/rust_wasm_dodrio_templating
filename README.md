@@ -40,6 +40,81 @@ I have in plans to add a Rust code generator, that creates the Rust code for the
  
 <https://github.com/LucianoBestia/unforgettable7_game/>  
 
+## How to use it
+
+Inside a perfectly working static html insert special comments and attributes to replace the next node or attribute.  
+
+### Replace the next text node  
+
+Insert a comment that starts with "wt_" (webbrowser text).  
+After that is the name of the enum to replace in the fn replace_with_string().  
+```html
+<p><!--wt_new_text>old_text</p>
+```
+
+### Replace the next node with nodes  
+
+Insert a comment that starts with "wn_" (webbrowser nodes).  
+After that is the name of the enum to replace in the fn replace_with_nodes().  
+The computed nodes can be complicated with a lot of html. If needed, this fragments of html are saved inside the html template as sub_templates. 
+```html
+<p><!--wn_new_nodes><div id="old_node">...</div></p>
+```
+
+### Replace the next attribute text value  
+
+Insert an attribute that starts with "data-wt-" (webbrowser text).  
+The attribute name finishes in the name of the next attribute.  
+The attribute value is the enum to use in the fn replace_with_string().  
+```html
+<input data-wt-value="wt_new_text" value="old text" />
+```
+
+### Set the event handler  
+
+Insert an attribute that starts with "data-on-".  
+The attribute name finishes in the name of the event to handle.  
+The attribute value is the enum to use in the fn set_event_listener().  
+The enum name must start with "wl_" (Webbrowser listener).
+```html
+<input data-on-keyup="wl_nickname_on_keyup" />
+```
+
+### Sub_templates
+
+When a part of the html template needs to be repeated, we use sub_templates.
+A sub_template is inside the html template in the node `<template>`.  
+
+```html
+<template name="sub_template_name">
+        <div>some html</div>
+</template>
+```
+The sub_template has a name attribute that is used for replacement in Rust code to return a vector of nodes for replace the "wn_" special comment.  
+
+```rust
+pub fn div_grid_all_items<'a>(
+    rrc: &RootRenderingComponent,
+    cx: &mut RenderContext<'a>,
+) -> Vec<Node<'a>> {
+    let mut vec_grid_items: Vec<Node<'a>> = Vec::new();
+        for x in 1..=10 {
+            let html_template = rrc.web_data.get_sub_template("sub_template_name");
+
+            let grid_item = unwrap!(rrc.render_template(
+                cx,
+                &html_template,
+                rust_wasm_dodrio_templating::html_template_mod::HtmlOrSvg::Html
+            ))
+            vec_grid_items.push(grid_item_bump);
+        }
+    }
+
+    // return
+    vec_grid_items
+}
+```
+
 ## cargo crev reviews and advisory
 
 It is recommended to always use [cargo-crev](https://github.com/crev-dev/cargo-crev)  

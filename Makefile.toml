@@ -1,5 +1,5 @@
 # mem6_game/rust_wasm_dodrio_templating/Makefile.toml
-# https://github.com/sagiegurari/cargo-make/blob/master/src/lib/Makefile.stable.toml
+# https://github.com/sagiegurari/cargo-make
 
 [config]
 skip_core_tasks = true
@@ -62,14 +62,9 @@ script = [
     "cargo build",
 ]
 
-[tasks.test]
-description = "cargo test"
-clear = true
-script = [
-    "clear",
-    "echo $ cargo test",
-    "cargo test",
-]
+# end of dev scripts
+# end of dev scripts
+# end of dev scripts
 
 [tasks.release]
 description = "cargo build release"
@@ -86,9 +81,37 @@ script = [
 ]
 
 
-# end of run scripts
-# end of run scripts
-# end of run scripts
+
+
+
+# end of release scripts
+# end of release scripts
+# end of release scripts
+
+[tasks.test]
+description = "cargo test"
+clear = true
+script = [
+    "clear",
+    "echo $ cargo test",
+    "cargo test",
+]
+
+[tasks.increment_minor]
+description = "increments semver minor"
+clear = true
+script = [
+    "clear",
+    "lmake_semver --increment=minor",
+]
+
+[tasks.verify]
+description = "cargo crev verify - "
+clear = true
+script = [
+    "clear",
+    "cargo crev verify"
+]
 
 [tasks.audit]
 description = "cargo audit - RustSec advisories"
@@ -163,10 +186,9 @@ script = [
     "echo after successful git push, use $ cargo make crates_io_dry_run or publish_to_web",
 ]
 
-
-# end of publish script
-# end of publish script
-# end of publish script
+# end of git script
+# end of git script
+# end of git script
 
 [tasks.crates_io_dry_run]
 clear = true
@@ -180,10 +202,10 @@ script = [
 
 [tasks.crates_io_publish]
 clear = true
-description = "gittag and publish to crates.io"
+description = "git tag and publish to crates.io"
 script = [
     "clear",
-    # gittag
+    # git tag
     "echo $ git tag -f -a v${CARGO_MAKE_CRATE_VERSION} -m version_${CARGO_MAKE_CRATE_VERSION}",
     "git tag -f -a v${CARGO_MAKE_CRATE_VERSION} -m version_${CARGO_MAKE_CRATE_VERSION}",
     # cargo publish
@@ -193,14 +215,6 @@ script = [
     "echo $ cargo install ${CARGO_MAKE_CRATE_NAME}"
 ]
 
-# end of crates.io publish script
-# end of crates.io publish script
-# end of crates.io publish script
-
-[tasks.increment_minor]
-description = "increments semver minor"
-clear = true
-script = [
-    "clear",
-    "lmake_semver --increment=minor",
-]
+# end of publish script
+# end of publish script
+# end of publish script
