@@ -7,7 +7,7 @@
 //!  [![crates.io](https://meritbadge.herokuapp.com/rust_wasm_dodrio_templating)](https://crates.io/crates/rust_wasm_dodrio_templating) [![Documentation](https://docs.rs/rust_wasm_dodrio_templating/badge.svg)](https://docs.rs/rust_wasm_dodrio_templating/) [![crev reviews](https://web.crev.dev/rust-reviews/badge/crev_count/rust_wasm_dodrio_templating.svg)](https://web.crev.dev/rust-reviews/crate/rust_wasm_dodrio_templating/) [![RustActions](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/workflows/rust/badge.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/) [![latest doc](https://img.shields.io/badge/latest_docs-GitHub-orange.svg)](https://lucianobestia.github.io/rust_wasm_dodrio_templating/rust_wasm_dodrio_templating/index.html) [![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/blob/master/LICENSE)
 //!
 //! [![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-261-green.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
-//! [![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-141-blue.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
+//! [![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-140-blue.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
 //! [![Lines in Comments](https://img.shields.io/badge/Lines_in_comments-51-purple.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
 //! [![Lines in examples](https://img.shields.io/badge/Lines_in_examples-0-yellow.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
 //! [![Lines in tests](https://img.shields.io/badge/Lines_in_tests-0-orange.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
@@ -87,7 +87,7 @@
 //! ```
 //! The sub_template has a name attribute that is used for replacement in Rust code to return a vector of nodes for replace the "wn_" special comment.  
 //!
-//! ```rust
+//! ```ignore
 //! pub fn div_grid_all_items<'a>(
 //!     rrc: &RootRenderingComponent,
 //!     cx: &mut RenderContext<'a>,
@@ -96,11 +96,11 @@
 //!     for x in 1..=10 {
 //!         let html_template = rrc.web_data.get_sub_template("sub_template_name");
 //!
-//!         let grid_item = unwrap!(rrc.render_template(
+//!         let grid_item = rrc.render_template(
 //!             cx,
 //!             &html_template,
 //!             rust_wasm_dodrio_templating::html_template_mod::HtmlOrSvg::Html
-//!         ))
+//!         ).unwrap();
 //!         vec_grid_items.push(grid_item_bump);
 //!     }
 //!

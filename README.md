@@ -12,7 +12,7 @@
 
 [comment]: # (lmake_lines_of_code start)
 [![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-261-green.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
-[![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-141-blue.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
+[![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-140-blue.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
 [![Lines in Comments](https://img.shields.io/badge/Lines_in_comments-51-purple.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
 [![Lines in examples](https://img.shields.io/badge/Lines_in_examples-0-yellow.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
 [![Lines in tests](https://img.shields.io/badge/Lines_in_tests-0-orange.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
@@ -94,7 +94,7 @@ A sub_template is inside the html template in the node `<template>`.
 ```
 The sub_template has a name attribute that is used for replacement in Rust code to return a vector of nodes for replace the "wn_" special comment.  
 
-```rust
+```ignore
 pub fn div_grid_all_items<'a>(
     rrc: &RootRenderingComponent,
     cx: &mut RenderContext<'a>,
@@ -103,11 +103,11 @@ pub fn div_grid_all_items<'a>(
     for x in 1..=10 {
         let html_template = rrc.web_data.get_sub_template("sub_template_name");
 
-        let grid_item = unwrap!(rrc.render_template(
+        let grid_item = rrc.render_template(
             cx,
             &html_template,
             rust_wasm_dodrio_templating::html_template_mod::HtmlOrSvg::Html
-        ))
+        ).unwrap();
         vec_grid_items.push(grid_item_bump);
     }
 

@@ -6,7 +6,7 @@
 <em><strong><a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating">repo</a>; version: 1.0.2  date: 2021-01-13 authors: Luciano Bestia</strong></em></p>
 <p><a href="https://crates.io/crates/rust_wasm_dodrio_templating"><img src="https://meritbadge.herokuapp.com/rust_wasm_dodrio_templating" alt="crates.io" /></a> <a href="https://docs.rs/rust_wasm_dodrio_templating/"><img src="https://docs.rs/rust_wasm_dodrio_templating/badge.svg" alt="Documentation" /></a> <a href="https://web.crev.dev/rust-reviews/crate/rust_wasm_dodrio_templating/"><img src="https://web.crev.dev/rust-reviews/badge/crev_count/rust_wasm_dodrio_templating.svg" alt="crev reviews" /></a> <a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/"><img src="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/workflows/rust/badge.svg" alt="RustActions" /></a> <a href="https://lucianobestia.github.io/rust_wasm_dodrio_templating/rust_wasm_dodrio_templating/index.html"><img src="https://img.shields.io/badge/latest_docs-GitHub-orange.svg" alt="latest doc" /></a> <a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Licence" /></a></p>
 <p><a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/"><img src="https://img.shields.io/badge/Lines_in_Rust-261-green.svg" alt="Lines in Rust code" /></a>
-<a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/"><img src="https://img.shields.io/badge/Lines_in_Doc_comments-141-blue.svg" alt="Lines in Doc comments" /></a>
+<a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/"><img src="https://img.shields.io/badge/Lines_in_Doc_comments-140-blue.svg" alt="Lines in Doc comments" /></a>
 <a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/"><img src="https://img.shields.io/badge/Lines_in_comments-51-purple.svg" alt="Lines in Comments" /></a>
 <a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/"><img src="https://img.shields.io/badge/Lines_in_examples-0-yellow.svg" alt="Lines in examples" /></a>
 <a href="https://github.com/LucianoBestia/rust_wasm_dodrio_templating/"><img src="https://img.shields.io/badge/Lines_in_tests-0-orange.svg" alt="Lines in tests" /></a></p>
@@ -64,7 +64,7 @@ A sub_template is inside the html template in the node <code>&lt;template&gt;</c
 </code></pre>
 <p>The sub_template has a name attribute that is used for replacement in Rust code to return a vector of nodes for replace the &quot;wn_&quot; special comment.</p>
 
-<div class="example-wrap"><pre class="rust rust-example-rendered">
+<div class='information'><div class='tooltip ignore'>ⓘ<span class='tooltiptext'>This example is not tested</span></div></div><div class="example-wrap"><pre class="rust rust-example-rendered ignore">
 <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">div_grid_all_items</span><span class="op">&lt;</span><span class="lifetime">&#39;a</span><span class="op">&gt;</span>(
     <span class="ident">rrc</span>: <span class="kw-2">&amp;</span><span class="ident">RootRenderingComponent</span>,
     <span class="ident">cx</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">RenderContext</span><span class="op">&lt;</span><span class="lifetime">&#39;a</span><span class="op">&gt;</span>,
@@ -73,11 +73,11 @@ A sub_template is inside the html template in the node <code>&lt;template&gt;</c
     <span class="kw">for</span> <span class="ident">x</span> <span class="kw">in</span> <span class="number">1</span>..<span class="op">=</span><span class="number">10</span> {
         <span class="kw">let</span> <span class="ident">html_template</span> <span class="op">=</span> <span class="ident">rrc</span>.<span class="ident">web_data</span>.<span class="ident">get_sub_template</span>(<span class="string">&quot;sub_template_name&quot;</span>);
 
-        <span class="kw">let</span> <span class="ident">grid_item</span> <span class="op">=</span> <span class="macro">unwrap</span><span class="macro">!</span>(<span class="ident">rrc</span>.<span class="ident">render_template</span>(
+        <span class="kw">let</span> <span class="ident">grid_item</span> <span class="op">=</span> <span class="ident">rrc</span>.<span class="ident">render_template</span>(
             <span class="ident">cx</span>,
             <span class="kw-2">&amp;</span><span class="ident">html_template</span>,
             <span class="ident">rust_wasm_dodrio_templating</span>::<span class="ident">html_template_mod</span>::<span class="ident">HtmlOrSvg</span>::<span class="ident">Html</span>
-        ))
+        ).<span class="ident">unwrap</span>();
         <span class="ident">vec_grid_items</span>.<span class="ident">push</span>(<span class="ident">grid_item_bump</span>);
     }
 
