@@ -5,11 +5,11 @@
 [comment]: # (lmake_cargo_toml_to_md start)
 
 **html templating for dodrio**  
-***[repo](https://github.com/LucianoBestia/rust_wasm_dodrio_templating); version: 1.0.3  date: 2021-01-13 authors: Luciano Bestia***  
+***version: 1.0.3  date: 2021-01-13 author: [dev_Bestia](https://bestia.dev) repository: [GitHub](https://github.com/LucianoBestia/rust_wasm_dodrio_templating)***  
 
 [comment]: # (lmake_cargo_toml_to_md end)
 
- [![crates.io](https://meritbadge.herokuapp.com/rust_wasm_dodrio_templating)](https://crates.io/crates/rust_wasm_dodrio_templating) [![Documentation](https://docs.rs/rust_wasm_dodrio_templating/badge.svg)](https://docs.rs/rust_wasm_dodrio_templating/) [![crev reviews](https://web.crev.dev/rust-reviews/badge/crev_count/rust_wasm_dodrio_templating.svg)](https://web.crev.dev/rust-reviews/crate/rust_wasm_dodrio_templating/) [![RustActions](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/workflows/rust/badge.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/) [![latest doc](https://img.shields.io/badge/latest_docs-GitHub-orange.svg)](https://lucianobestia.github.io/rust_wasm_dodrio_templating/rust_wasm_dodrio_templating/index.html) [![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/blob/master/LICENSE)
+ [![crates.io](https://img.shields.io/crates/v/rust_wasm_dodrio_templating.svg)](https://crates.io/crates/rust_wasm_dodrio_templating) [![Documentation](https://docs.rs/rust_wasm_dodrio_templating/badge.svg)](https://docs.rs/rust_wasm_dodrio_templating/) [![crev reviews](https://web.crev.dev/rust-reviews/badge/crev_count/rust_wasm_dodrio_templating.svg)](https://web.crev.dev/rust-reviews/crate/rust_wasm_dodrio_templating/) [![RustActions](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/workflows/rust/badge.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/) [![latest doc](https://img.shields.io/badge/latest_docs-GitHub-orange.svg)](https://lucianobestia.github.io/rust_wasm_dodrio_templating/rust_wasm_dodrio_templating/index.html) [![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/blob/master/LICENSE)
 
 [comment]: # (lmake_lines_of_code start)
 [![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-261-green.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
