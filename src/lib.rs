@@ -2,15 +2,15 @@
 //! # rust_wasm_dodrio_templating
 //!
 //! **html templating for dodrio**  
-//! ***[repo](https://github.com/LucianoBestia/rust_wasm_dodrio_templating); version: 1.0.3  date: 2021-01-13 authors: Luciano Bestia***  
+//! ***[repo](https://github.com/bestia-dev/rust_wasm_dodrio_templating); version: 1.0.3  date: 2021-01-13 authors: bestia.dev***  
 //!
-//!  [![crates.io](https://meritbadge.herokuapp.com/rust_wasm_dodrio_templating)](https://crates.io/crates/rust_wasm_dodrio_templating) [![Documentation](https://docs.rs/rust_wasm_dodrio_templating/badge.svg)](https://docs.rs/rust_wasm_dodrio_templating/) [![crev reviews](https://web.crev.dev/rust-reviews/badge/crev_count/rust_wasm_dodrio_templating.svg)](https://web.crev.dev/rust-reviews/crate/rust_wasm_dodrio_templating/) [![RustActions](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/workflows/rust/badge.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/) [![latest doc](https://img.shields.io/badge/latest_docs-GitHub-orange.svg)](https://lucianobestia.github.io/rust_wasm_dodrio_templating/rust_wasm_dodrio_templating/index.html) [![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/blob/master/LICENSE)
+//!  [![crates.io](https://meritbadge.herokuapp.com/rust_wasm_dodrio_templating)](https://crates.io/crates/rust_wasm_dodrio_templating) [![Documentation](https://docs.rs/rust_wasm_dodrio_templating/badge.svg)](https://docs.rs/rust_wasm_dodrio_templating/) [![crev reviews](https://web.crev.dev/rust-reviews/badge/crev_count/rust_wasm_dodrio_templating.svg)](https://web.crev.dev/rust-reviews/crate/rust_wasm_dodrio_templating/) [![RustActions](https://github.com/bestia-dev/rust_wasm_dodrio_templating/workflows/rust/badge.svg)](https://github.com/bestia-dev/rust_wasm_dodrio_templating/) [![latest doc](https://img.shields.io/badge/latest_docs-GitHub-orange.svg)](https://bestia-dev.github.io/rust_wasm_dodrio_templating/rust_wasm_dodrio_templating/index.html) [![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bestia-dev/rust_wasm_dodrio_templating/blob/master/LICENSE)
 //!
-//! [![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-261-green.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
-//! [![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-145-blue.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
-//! [![Lines in Comments](https://img.shields.io/badge/Lines_in_comments-51-purple.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
-//! [![Lines in examples](https://img.shields.io/badge/Lines_in_examples-0-yellow.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
-//! [![Lines in tests](https://img.shields.io/badge/Lines_in_tests-0-orange.svg)](https://github.com/LucianoBestia/rust_wasm_dodrio_templating/)
+//! [![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-261-green.svg)](https://github.com/bestia-dev/rust_wasm_dodrio_templating/)
+//! [![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-145-blue.svg)](https://github.com/bestia-dev/rust_wasm_dodrio_templating/)
+//! [![Lines in Comments](https://img.shields.io/badge/Lines_in_comments-51-purple.svg)](https://github.com/bestia-dev/rust_wasm_dodrio_templating/)
+//! [![Lines in examples](https://img.shields.io/badge/Lines_in_examples-0-yellow.svg)](https://github.com/bestia-dev/rust_wasm_dodrio_templating/)
+//! [![Lines in tests](https://img.shields.io/badge/Lines_in_tests-0-orange.svg)](https://github.com/bestia-dev/rust_wasm_dodrio_templating/)
 //!
 //! ## Html templating
 //!
@@ -33,7 +33,7 @@
 //!
 //! ## Used in projects
 //!
-//! <https://github.com/LucianoBestia/unforgettable7_game/>  
+//! <https://github.com/bestia-dev/unforgettable7_game/>  
 //!
 //! ## How to use it
 //!
