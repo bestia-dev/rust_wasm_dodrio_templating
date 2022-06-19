@@ -26,7 +26,8 @@
 
 [comment]: # (lmake_lines_of_code end)
 
-Hashtags: #rustlang #tutorial #template
+Hashtags: #rustlang #tutorial #template  
+My projects on Github are more like a tutorial than a finished product: [bestia-dev tutorials](https://github.com/bestia-dev/tutorials_rust_wasm).
 
 ## Html templating
 
