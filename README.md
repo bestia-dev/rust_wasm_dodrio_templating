@@ -15,7 +15,7 @@
 [![RustActions](https://github.com/bestia-dev/rust_wasm_dodrio_templating/workflows/rust/badge.svg)](https://github.com/bestia-dev/rust_wasm_dodrio_templating/)
 [![latest doc](https://img.shields.io/badge/latest_docs-GitHub-orange.svg)](https://bestia-dev.github.io/rust_wasm_dodrio_templating/rust_wasm_dodrio_templating/index.html)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bestia-dev/rust_wasm_dodrio_templating/blob/master/LICENSE)
-![Hits](https://bestia.dev/webpage_hit_counter/get_svg_image/936823417)
+![Hits](https://bestia.dev/webpage_hit_counter/get_svg_image/936823417.svg)
 
 [comment]: # (lmake_lines_of_code start)
 [![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-261-green.svg)](https://github.com/bestia-dev/rust_wasm_dodrio_templating/)
